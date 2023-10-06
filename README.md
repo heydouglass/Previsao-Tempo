@@ -7,10 +7,7 @@ Uma aplicação de Previsão do Tempo.
 - [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
 - [Requisitos do Sistema](#requisitos-do-sistema)
-- [Instalação](#instalação)
 - [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
 
 ## Visão Geral
 
