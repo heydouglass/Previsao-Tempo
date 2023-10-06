@@ -37,7 +37,7 @@ def processar_dados():
     temperatura = requisicao_dic['main']['temp'] - 273.15
     umidade = requisicao_dic['main']['humidity']
 
-    temperatura_int = int(temperatura)
+    temperatura_int = round(temperatura)
     return render_template('index.html', descricao=descricao, temperatura_int=temperatura_int, umidade=umidade, cidade=cidade)
 
 
