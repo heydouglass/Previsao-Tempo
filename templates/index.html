@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/style.css">
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+        <div class="conteiner">
+            <div class="conteudo"><h1>Previsão do Tempo!</h1>
+                <form action="/processar_dados" method="POST">
+                    <label for="cidade">Digite sua cidade:</label>
+                    <input type="text" name="cidade" id="cidade">
+                    <input type="submit" value="Buscar">
+                </form>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <script>
+        $(function() {
+            $("#cidade").autocomplete({
+                source: function(request, response) {
+                    $.get("/autocomplete", { term: request.term }, function(data) {
+                        response(data);
+                    });
+                },
+                minLength: 2
+            });
+        });
+    </script>
+        </div>
+           <div class="informacoes">
+            <p>O Clima na cidade: {{ cidade }}</p>
+            <p>{{ descricao }}</p>
+            <p>{{ temperatura_int }}ºC</p>
+            <p>{{ umidade }}%</p>
+           </div>
+        </div>
+
+</body>
+</html>
