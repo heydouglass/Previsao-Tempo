@@ -11,6 +11,5 @@ Jinja2==3.1.2
 multidict==6.0.4
 packaging==23.2
 python-decouple==3.8
-python-dotenv==1.0.0
 requests==2.31.0
 virtualenv==20.24.2
