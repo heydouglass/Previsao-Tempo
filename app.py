@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 API_KEY = "572976fc428065b9885807e4b718c994"
 
-# Carrega o arquivo JSON com os dados das cidades
 with open('static/cities.json', 'r', encoding='utf-8') as json_file:
     city_data = json.load(json_file)
 
