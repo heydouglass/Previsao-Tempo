@@ -38,7 +38,11 @@ def processar_dados():
     umidade = requisicao_dic['main']['humidity']
 
     temperatura_int = round(temperatura)
-    return render_template('index.html', descricao=descricao, temperatura_int=temperatura_int, umidade=umidade, cidade=cidade)
+
+    # Adicione a variável do ícone
+    icone = descricao
+
+    return render_template('index.html', descricao=descricao, temperatura_int=temperatura_int, umidade=umidade, cidade=cidade, icone=icone)
 
 
 if __name__ == '__main__':

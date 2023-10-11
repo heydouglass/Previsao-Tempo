@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: "roboto", arial, helvetica;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/static/lofi.jpg);
+  backdrop-filter: blur(5px);
+}
+
+.conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #052d60;
+  border-radius: 20px;
+  height: 500px;
+  width: 600px;
+  color: #c9c9c9;
+  box-shadow: 5px 20px 40px #012653;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.titulo {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  background-color: #052d60;
+  color: #fff;
+  border: 2px solid #012653;
+  border-radius: 5px;
+  padding: 10px 220px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #012653;
+}
+
+#cidade {
+  background-color: #052d60;
+  color: #fff;
+  border: 2px solid #012653;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#cidade:hover {
+  background-color: #012653;
+}
+
+.city {
+  font-size: 30px;
+}
+
+.th2 {
+  font-size: 30px;
+}
+
+#icone {
+  width: 50px;
+  height: 50px;
+}
